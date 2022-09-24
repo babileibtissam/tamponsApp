@@ -28,12 +28,6 @@ class _FirstScreenState extends State<FirstScreen> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 1, 188, 194),
         title: const Text('Tampons Generator'),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.search),
-          ),
-        ],
       ),
       body: Consumer<TamponsProvider>(builder: (_, tamponsProvider, __) {
         final tampons = tamponsProvider.tampons;
