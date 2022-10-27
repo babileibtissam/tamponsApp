@@ -1,11 +1,8 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tampons/Core/Providers/tampons_provider.dart';
 import 'package:tampons/UI/Views/create_tampon_view.dart';
 import 'package:tampons/UI/Views/update_tampon_view.dart';
-import 'package:tampons/UI/Widgets/search.dart';
 
 class FirstScreen extends StatefulWidget {
   const FirstScreen({Key? key}) : super(key: key);

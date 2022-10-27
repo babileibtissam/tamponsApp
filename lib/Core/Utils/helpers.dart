@@ -61,7 +61,7 @@ pw.Widget buildTampon(Tampon tampon) {
           color: PdfColor.fromHex('#333333'),
           child: pw.Transform(
             alignment: pw.Alignment.center,
-            transform: Matrix4.rotationY(180),
+            transform: Matrix4.rotationY(0),
             child: pw.Text(tampon.contenu,
                 style: pw.TextStyle(color: PdfColor.fromRYB(0, 0, 0))),
           ),
@@ -76,7 +76,7 @@ pw.Widget buildTampon(Tampon tampon) {
           color: PdfColor.fromHex('#333333'),
           child: pw.Transform(
             alignment: pw.Alignment.center,
-            transform: Matrix4.rotationY(180),
+            transform: Matrix4.rotationY(0),
             child: pw.Text(tampon.contenu,
                 style: pw.TextStyle(color: PdfColor.fromRYB(0, 0, 0))),
           ),
@@ -92,7 +92,7 @@ pw.Widget buildTampon(Tampon tampon) {
           color: PdfColor.fromHex('#333333'),
           child: pw.Transform(
             alignment: pw.Alignment.center,
-            transform: Matrix4.rotationY(180),
+            transform: Matrix4.rotationY(0),
             child: pw.Center(
               child: pw.Text(
                 tampon.contenu,
@@ -112,7 +112,7 @@ pw.Widget buildTampon(Tampon tampon) {
           color: PdfColor.fromHex('#333333'),
           child: pw.Transform(
             alignment: pw.Alignment.center,
-            transform: Matrix4.rotationY(180),
+            transform: Matrix4.rotationY(0),
             child: pw.Center(
               child: pw.Text(
                 tampon.contenu,
@@ -133,7 +133,7 @@ pw.Widget buildTampon(Tampon tampon) {
           color: PdfColor.fromHex('#333333'),
           child: pw.Transform(
             alignment: pw.Alignment.center,
-            transform: Matrix4.rotationY(180),
+            transform: Matrix4.rotationY(0),
             child: pw.Text(tampon.contenu,
                 style: pw.TextStyle(color: PdfColor.fromRYB(0, 0, 0))),
           ),

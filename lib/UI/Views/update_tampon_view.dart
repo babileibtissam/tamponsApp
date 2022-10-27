@@ -335,104 +335,104 @@ class _UpdateTamponViewState extends State<UpdateTamponView> {
                   return null;
                 },
               ),
-              const Padding(
-                padding: EdgeInsets.all(4.0),
-              ),
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  const Text(
-                    'Logo: ',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(width: 20),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                          const Color.fromRGBO(181, 224, 226, 1)),
-                    ),
-                    onPressed: () async {
-                      image = await pickFile(context);
-                      setState(() {});
-                    },
-                    child: const Text(
-                      'Choisir un logo',
-                      style: TextStyle(
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              image != null
-                  ? Container(
-                      color: const Color.fromRGBO(181, 224, 226, 1),
-                      child: Image.file(
-                        File(image!.path),
-                        fit: BoxFit.contain,
-                      ),
-                    )
-                  : const SizedBox(),
-              const SizedBox(height: 20),
-              image != null
-                  ? Row(
-                      children: [
-                        Expanded(
-                          child: ListTile(
-                            selectedColor:
-                                const Color.fromRGBO(181, 224, 226, 1),
-                            contentPadding: const EdgeInsets.all(0),
-                            horizontalTitleGap: 0,
-                            title: const Text('Gauche'),
-                            leading: Radio<String>(
-                              value: 'Gauche',
-                              groupValue: tampon.logoAlign,
-                              onChanged: (String? value) {
-                                setState(() {
-                                  tampon.logoAlign = value!;
-                                });
-                              },
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: ListTile(
-                            contentPadding: const EdgeInsets.all(0),
-                            horizontalTitleGap: 0,
-                            title: const Text('Milieu'),
-                            leading: Radio<String>(
-                              value: 'Milieu',
-                              groupValue: tampon.logoAlign,
-                              onChanged: (String? value) {
-                                setState(() {
-                                  tampon.logoAlign = value!;
-                                });
-                              },
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          child: ListTile(
-                            contentPadding: const EdgeInsets.all(0),
-                            horizontalTitleGap: 0,
-                            title: const Text('Droite'),
-                            leading: Radio<String>(
-                              value: 'Droite',
-                              groupValue: tampon.logoAlign,
-                              onChanged: (String? value) {
-                                setState(() {
-                                  tampon.logoAlign = value!;
-                                });
-                              },
-                            ),
-                          ),
-                        ),
-                      ],
-                    )
-                  : const SizedBox(),
+              // const Padding(
+              //   padding: EdgeInsets.all(4.0),
+              // ),
+              // const SizedBox(height: 10),
+              // Row(
+              //   children: [
+              //     const Text(
+              //       'Logo: ',
+              //       style: TextStyle(
+              //         fontWeight: FontWeight.bold,
+              //       ),
+              //     ),
+              //     const SizedBox(width: 20),
+              //     ElevatedButton(
+              //       style: ButtonStyle(
+              //         backgroundColor: MaterialStateProperty.all(
+              //             const Color.fromRGBO(181, 224, 226, 1)),
+              //       ),
+              //       onPressed: () async {
+              //         image = await pickFile(context);
+              //         setState(() {});
+              //       },
+              //       child: const Text(
+              //         'Choisir un logo',
+              //         style: TextStyle(
+              //           color: Colors.black,
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+              // const SizedBox(height: 20),
+              // image != null
+              //     ? Container(
+              //         color: const Color.fromRGBO(181, 224, 226, 1),
+              //         child: Image.file(
+              //           File(image!.path),
+              //           fit: BoxFit.contain,
+              //         ),
+              //       )
+              //     : const SizedBox(),
+              // const SizedBox(height: 20),
+              // image != null
+              //     ? Row(
+              //         children: [
+              //           Expanded(
+              //             child: ListTile(
+              //               selectedColor:
+              //                   const Color.fromRGBO(181, 224, 226, 1),
+              //               contentPadding: const EdgeInsets.all(0),
+              //               horizontalTitleGap: 0,
+              //               title: const Text('Gauche'),
+              //               leading: Radio<String>(
+              //                 value: 'Gauche',
+              //                 groupValue: tampon.logoAlign,
+              //                 onChanged: (String? value) {
+              //                   setState(() {
+              //                     tampon.logoAlign = value!;
+              //                   });
+              //                 },
+              //               ),
+              //             ),
+              //           ),
+              //           Expanded(
+              //             child: ListTile(
+              //               contentPadding: const EdgeInsets.all(0),
+              //               horizontalTitleGap: 0,
+              //               title: const Text('Milieu'),
+              //               leading: Radio<String>(
+              //                 value: 'Milieu',
+              //                 groupValue: tampon.logoAlign,
+              //                 onChanged: (String? value) {
+              //                   setState(() {
+              //                     tampon.logoAlign = value!;
+              //                   });
+              //                 },
+              //               ),
+              //             ),
+              //           ),
+              //           Expanded(
+              //             child: ListTile(
+              //               contentPadding: const EdgeInsets.all(0),
+              //               horizontalTitleGap: 0,
+              //               title: const Text('Droite'),
+              //               leading: Radio<String>(
+              //                 value: 'Droite',
+              //                 groupValue: tampon.logoAlign,
+              //                 onChanged: (String? value) {
+              //                   setState(() {
+              //                     tampon.logoAlign = value!;
+              //                   });
+              //                 },
+              //               ),
+              //             ),
+              //           ),
+              //         ],
+              //       )
+              //     : const SizedBox(),
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
